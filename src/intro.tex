@@ -1,88 +1,87 @@
-Wolfenstein 3D, released on May 5th, 1992, established the First Person Shooter genre. The game design, powered by an engine enabling beautiful 256 color graphics, speed, high framerate, clever AI, crisp sound effects, and engaging music, was universally acclaimed. Within a year more than 100,000 units had been sold\footnote{The game was distributed via shareware.}, bringing fame and a little bit of fortune to the team who built it: id Software.\\
+Wolfenstein 3D, выпущенный 5 мая 1992 года, установил такой жанр как FPS (First Person Shooter - стрелялка от первого лица). Дизайн игры, усиленный игровым движком обеспечивающем отличную 256-цветную графику, скорость, высокий фреймрейт (частота кадров), умный ИИ, чёткие звуковые эффекты, увлекательную музыку, всё это получило всеобщее признание. В течение года игра разошлась в количестве более 100 000 экземпляров\footnote{Игра распространялась через модель shareware.}, что принесло всеобщее признание и немного удачи команде разработчиков: id Software.\\
 \par
 \begin{figure}[H]
 \centering
 \fullimage{action_packed.png}
 \end{figure}
 \par
-However, fans did not stop at beating the game. Driven by a desire to modify it and make their own characters and maps, they started to explore and reverse engineer. Within a few months the asset formats were well-known and  mods\footnote{MODified version.} were released with altered graphics, sounds effects, musics, and maps. However, the core of the game - the 3D engine and the secrets of its speed - remained mostly unknown.\\
+Однако, фанаты не остановились на простом прохождении игры. Движимые духом созидания, в желании создать собственных персонажей и карты, они начали исследовать и разбирать код игры. В течение нескольких месяцев форматы игры были полностью разобраны, и были выпущены различные моды\footnote{МОДифицированная версия.} с изменённой графикой, звуковыми эффектами, музыкой и картами. Однако, ядро игры и секрет ее быстрой работы оставались не раскрытыми.\\
 \\
-It was kept secret for an obvious reason: a powerful engine is an essential asset for a gaming company. As a means to outperforming competitors, it's good business practice to keep other programmers clueless. This allows for maintaining a technological advantage, making better games, and generating more profit.\\
+Это держалось в секрете по вполне очевидной причине: мощный движок - важный актив для игровой компании. В качестве средства для победы над конкурентами, хорошая деловая практика - держать других программистов в неведении. Это позволяет сохранить технологическое преимущество, создавать лучшие игры и получать больше прибыли.\\
 \\
-However, a few people within id Software did not see things that way. Instead of going along with what was common sense, they wanted to embrace players' enthusiasm and fully open the source code to the public. After much internal debate, id Software did the unthinkable: on July 21st, 1995 they uploaded a zip archive on \emph{ftp.idsoftware.com} containing the full source code of the engine with instructions to build it\footnote{They were not totally crazy, they had built a new game engine which made Wolfenstein 3D obsolete: Doom was released on December 10, 1993.}.\\
+Тем не менее, некоторые люди в id Software считали по-другому. Вместо того, чтобы придерживаться здравого смысла, они хотели принять энтузиазм игроков и полностью открыть исходный код для публики. После долгих внутренних дискуссий id Software делает немыслимое: 21 июля 1995 года выгружается zip-архив на\emph{ftp.idsoftware.com}, содержащий полный исходный код движка с инструкциями по его сборке\footnote{Это было не таким уж и безумием, 10 декабря 1993 года вышел Doom, сделавший Wolfenstein 3D устаревшим.}. \\
 \par
  \begin{fancyquotes}
-   Programming is not a zero-sum game. Teaching something to a fellow programmer doesn't take it away from you. I'm happy to share what I can, because I'm in it for the love of programming.\\
+   Программирование - это игра с ненулевой суммой. Делясь знаниями с коллегами, вы не теряете их. Я счастлив делиться всем, что знаю просто из любви к программированию.\\
    \\
-\textbf{John Carmack - Programmer}
+\textbf{Джон Кармак - программист}
  \end{fancyquotes}\\
 \\
-Opening the code did much more than enable programmers. It had two unforeseen consequences.\\
+Открытый код, кроме того, что привлекает программистов, имеет еще две инетересных особенности.\\
 \\
-First, it allowed the software to live long after the target hardware and operating system disappeared. With access to the source, programmers were able to maintain and port the engine to new hardware and operating systems. Twenty years after the release of Wolfenstein 3D, you can still play the game on anything with a CPU, some RAM, and a framebuffer. \\
+Во-первых, это увеличивает срок жизни программы даже после того, как целевое оборудование или операционная система перестают выпускаться. Имея доступ к исходникаМ, программисты могут улучшить или портировать движок на новую ОС или железо. Спустя двенадцать лет после релиза Wolfenstain 3D вы всё еще можете поиграть в него на любом процессоре, с любой памятью, с любой видекартой.\\
 \\
-Second, it created a window back in time to 1991. Having reviewed complex engines such as Quake III and Doom III on \emph{fabiensanglard.net}, I thought I would have merely skimmed over the Wolfenstein 3D engine and its "simple" raycasting technology. When I took a deeper look out of curiosity, something struck me and I could not stop. The more I read, the more I came to realize how the target machine, the IBM PC, was designed for office work rather than gaming. It was meant to crunch integers and display static images for word processing and spreadsheet applications. 
-%This is the story this book is trying to tell. 
-What id Software\footnote{Other companies, such as Origin Systems and LucasArts were also doing amazing things.} did in 1991 was not just program a machine - they re-purposed a tool built to do office work and turned it into the best gaming platform in the world.\\
+Во-вторых, это открывает окно назад, в 1991 год. Разобрав такие сложные движки как Quake III и Doom III на \emph{fabiensanglard.net}, я подумал, что стоило бы вскольз пробежаться по движку Wolfenstain 3D, и его "простой" технологии трассировки луча. Когда я из любопытства посмотрел поглубже, меня поразило то, что я увидел, и я уже не смог остановиться в своём исследовании. Чем дальше, тем больше я осознаю, что такой целевой компьютер как IBM PC, предназначен больше для офисной работы, а не для игр. Основное его назначение - целочисленный расчёт и отображение статических изображений для обработки текстови электронных таблиц.
+%Это история, которую пытается рассказать эта книга.
+То, что сделала id Software\footnote{Другие компании, такие как Origin Systems и LucasArts так же творили невероятное.} в 1991 году - это не просто запрограммировала машину, они превратили инструмент, созданный для офисной работы в лучшую игровую платформу в мире.\\
 \\
-But why go through so much trouble? After all, if you were a game company and you wanted to make video games, you had video game consoles dedicated to this very specific task. The Genesis, the Super NES, and the Neo-Geo had sprite engines\label{sprite_engine_ref} which despite limitations such as size and number allowed movement of something on the screen by simply updating its $(x,y)$ coordinates. They were able to easily generate smooth animation at 60 frames per second, had controllers, had an audio system for sound and music, and were homogeneous (e.g. all SNES were the same). If you still really wanted to use a personal computer for a game, why not use an Amiga 500 which was packed with coprocessors designed for animation?\\
+Но для чего такие сложности? Вообще, если у вас есть игровая компания, и вы хотите создавать видеоигры, существуют игровые консоли, ориентированные исключительно на эту задачу. Genesis, Super NES и Neo-Geo имели в своём арсенале спрайтовые движки\label{sprite_engine_ref}, которые, несмотря на ограничения по размеру и количеству спрайтов, позволяли передвигать на экране изображения просто обновляя их $(x,y)$ координаты. Они могли запросто генерировать плавную анимацию в 60 кадров в секунду, имели контроллеры, аудио-системы для звука и музыки, и были однородными (т.е., любая SNES консоль была идентично другой такой же). Если вам все же хотелось использовать персональный компьютер для игр, почему бы не взять Amiga 500, который поставлялся с сопроцессором, специально разработанным для анимации?\\
 \\
-The reason fits in one word: framebuffer. The kind of game id Software wanted to create could not be done with a sprite engine or tricks from a Copper\footnote{Nickname of a powerful Amiga co-processor allowing operations at hsync level.}. They wanted to shake the gaming world by providing an immersive experience in three dimensions. In order to do that they needed to draw a full screen, pixel by pixel, in a framebuffer before it was sent to the monitor. \\
+Причина содержится в одном слове: кадровый буфер. Тот тип игры, который id Software хотело создать, не мог использовать спрайтовый движок, или трюки Cooper\footnote{Прозвище мощного сопроцессора на Amiga, позволяющего выполнять операции уровня вертикальной синхронизации.}. Они хотели потрясти весь игровой мир, предоставив потрясающий опыт в трёх измерениях. Для этого им нужно было обновлять весь экран, пиксель за пикселем, в кадровом буфере до того, как он отображался на мониторе.\\
 \par
-To draw all these pixels they needed a powerful CPU, and a PC outperformed any console on the market. No Amiga\footnote{Jimmy Maher advances an interesting theory in his book "The Future was here: The Commodore Amiga": People wanted to play First Person Shooters, which the Amiga architecture did not allow. This inability ultimately led to the downfall of Commodore's best seller.}, even with its co-processor, could rival a PC in terms of raw power.
+Чтобы отобраизть все эти пиксели, им нужен мощный ЦП, и ПК, первосходящий любую консоль на рынке. Amiga\footnote{Джимми Махер выдвинул интересную теорию в своей книге "Будущее здесь: The Commodore Amiga": Люди хотели играть в шутеры от первого лица, что архитектура Amiga не могла позволить. Эта особенность, в конечном итоге, привела к краху бесселера от Commodore.}, даже со своим сопроцессором, не могла конкурировать по мощности с ПК.
 \par
 \input{imgs/drawings/available_hardware_mips.tex}
 
  
-With its fast CPU and 256KiB framebuffer, a 1991 PC looked promising at first. However, there were three seemingly impossible\footnote{The title of this book could have been "The Impossible Machine".} obstacles to overcome:
+Имея быстрый ЦП и кадровый буфер размером в 256кБ, в 1991 году ПК выглядел самым многообещающим. Однако, было три, казалось бы, непреодолимых препятствия\footnote{The title of this book could have been "The Impossible Machine".}:
 \begin{itemize}
-\item The video system (called VGA) could not double buffer. It was not possible to have smooth animations without ugly artifacts called "tears" on the screen.
-\item The CPU could only perform integer operations, but 3D calculations required keeping track of fractions.
-\item The PC Speaker, the default sound device, could only produce square waves resulting in a bunch of "beeps" which were more annoying than anything else.
+\item Видеосистема (называемая VGA), не имела двойного буфера. Не было возможности отобразить плавную анимацию без неприятных артефактов на экране, называемых "слёзы".
+\item Процессор мог работать только с целочисленными операторами, но трёхмерные преобразования требуют дробные вычисления.
+\item Динамик, которым по умолчанию комплектовался ПК, мог воспроизводить только квадратичные волны, и в результате лишь "бикал", не в силах воспроизвести ничегои иного.
 \end{itemize}
-Beyond these major blockers were even more challenges:
+Помимо этого, были еще серьёзные проблемы:
 \begin{itemize}
-\item The RAM addressing mode was not flat but segmented, resulting in complex and error prone pointer arithmetic.
-\item VGA pixels were not square: the framebuffer was stretched vertically when
-transferred to the screen.
-\item The audio ecosystem was fragmented. Each of the various sound systems had different capabilities and expectations.
-\item The machine could only address 1MB of RAM. To go beyond required entering a fragmented ecosystem of drivers.
-\item The bus was slow and I/O with the VRAM was a bottleneck. It was next to impossible to write a full framebuffer at 70 frames per second.
+\item Адресный режим ОЗУ был не плоским, а сегментированным, в результате это приводит к сложной и подверженной ошибкам арифметике указателей.
+\item Пиксели на VGA не были квадратными, кадровый буфер был вытянут по вертикали.
+\item Большие различия в аудио-системах. Каждая система имела свои особенности и ограничения.
+\item Машина могла оперировать только 1 Мб ОЗУ, для преодоления этого барьера необходимо было использовать драйвера, каждый со своей особенностью.
+\item Шина была очень медленной и обмен данными с видеопамятью был бутылочным горлышком. В частности, невозможно было переписывать весь экран с частотой более 70 кадров в секунду.
 \end{itemize}
 
-Overall, it looked like the machine was \emph{doom}ed to do boring things. But many around the world did not accept that and tinkered with the hardware to achieve unexpected results. How they did it is the \textit{raison d'\^etre} of this book. I've chosen to divide this book into three chapters:
+В целом, казалось, что ПЦ был обречён на выполнение скучных задач. Но кое-кто в мире не принял этого факта и использовал аппаратные средства ПК для достижения довольно неожиданных результатов. Как они это сделали, описывается в этой книге. Я разделил её на три части:
 \begin{itemize}
-\item Chapter 2: The Hardware. The five components of a PC from 1991.
-\item Chapter 3: The Team\footnote{This is an engineering book. For the human aspect read David Kushner's chef d'oeuvre: "Masters of Doom".}. The people pushing the edges.
-\item Chapter 4: The Software. The Wolfenstein 3D game engine.
+\item Часть 2: Аппаратное обеспечение. Пять компонентов ПК из 1991.
+\item Часть 3: Команда\footnote{Это техническая книга. Для изучения человеческих отношений можно прочитать книгу Дэвида Кушнера: "Masters of Doom".}. Люди передвигают границы.
+\item Часть 4: Программное обеспечение. Игровой движок The Wolfenstein 3D.
 \end{itemize}
 \par
-By first showing the hardware constraints, I hope programmers will develop an appreciation for the software and how it navigated obstacles, sometimes turning limitations into advantages.\\
+Впервые демонстрируя аппаратные ограничения, я надеюсь, что программисты оценят По, и то, как как оно преодолевает эти ограничения, зачастую превращая их в преимущества.\\
 \pagebreak
 
 
 
- \bu{Trivia :} The name "Wolfenstein 3D" was inspired by the 1981 Apple II title "Castle Wolfenstein" from Silas Warner.\\
+ \bu{Trivia :} Название "Wolfenstein 3D" впервые было представлено в 1981 году на Apple II в игре "Castle Wolfenstein" Силас Уорнера.\\
 \par
  \begin{fancyquotes}
-   We named it Wolfenstein 3-D because the original Castle Wolfenstein had a sequel called Beyond Castle Wolfenstein, which was \#2. Our version of Castle Wolfenstein would be \#3 and it would be in 3-D. We used the same naming system with Catacomb, Catacomb 2, and Catacomb 3-D.
+   Мы названи её Wolfenstain 3-D, так как оригинальная игра Castle Wolfenstain имела сиквел Beyond Castle Wolfenstein, который был \#2. Наша версия Castle Wolfenstein юыда \#3 и она была в 3-D. Мы использовали ту же систему наименования, что и с Catacomb, Catacomb 2 и Catacomb 3-D.
  \bigskip \\
-\textbf{John Romero}
+\textbf{Джон Ромеро}
  \end{fancyquotes}
  \\
 \par
- \cscaledimage{1}{intro_wolf_appleii.png}{"Castle Wolfenstein" Intro screen}
+ \cscaledimage{1}{intro_wolf_appleii.png}{Заглавный экран "Castle Wolfenstein"}
 \par
- \par The Apple version was stealth-oriented (Wolfenstein's "Profound Carnage" style was a clear departure from the original theme) but really stood out thanks to its unprecedented use of digitized voices.\\
+ \par Версия игры на Apple была ориентирована на скрытность (стиль Wolfenstein 3-D "Полный убой" явно отличался от оригинальной игры), при этом выделялась благодаря использованию оцифрованных голосов, что на тот момент было беспрецендентно.
  \par
- Initially the team believed they would be unable to use the Wolfenstein name due to trademark issues. They came up with multiple possible titles but ultimately managed to locate the lady in Baltimore, Maryland who owned the Wolfenstein trademark and bought it from her for \$5,000 in 1992.\\
+ Изначально, команда считала, что им не удастся использовать имя Wolfenstein из за проблем с торговой маркой. Однако, в 1992 году они смогли найти в г.Байлморе, штат Мэрилэнд женщину, которая владела торговой маркой Wolfenstain, и купить её за \$5,000.\\
  \par
 
 
 \begin{figure}[H]
 \centering
 \scaledimage{1}{CastleWolfensteinAppleII.png}
-\caption{"Castle Wolfenstein" stealth gameplay.}
+\caption{Оринетированный на скрытность "Castle Wolfenstein".}
 \end{figure}
 
 
